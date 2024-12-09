@@ -1,0 +1,120 @@
+/* Global */
+body {
+    font-family: 'Poppins', sans-serif; /* Aplica la fuente Poppins a todo el body */
+    margin: 0;
+    padding: 0;
+    background: #023e8a;
+    display: flex;
+    height: 100vh;
+}
+
+/* Panel lateral fijo (Drawer) en el lado derecho */
+.menu-derecha {
+    position: fixed; /* Fijamos el panel al lado derecho */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 500px; /* Ancho del panel aumentado */
+    background-color: #03045e; /* Fondo oscuro */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Fondo de la imagen (sin eslogan) */
+.background-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/ClassMatch/img/logo.png'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Asegura que el contenido del formulario esté por encima */
+}
+
+/* Contenedor del formulario dentro del drawer */
+.contenedor {
+    width: 100%; /* Asegura que el formulario ocupe todo el ancho del drawer */
+    max-width: 700px; /* Máximo ancho del contenedor */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #03045e;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 100px; /* Espacio para que no se solape con la imagen de fondo */
+    text-align: center;
+}
+
+/* Logo */
+.logo img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+/* Títulos */
+h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Etiquetas */
+label {
+    text-align: left;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Campos de texto */
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+/* Botón */
+.btn-primario {
+    width: 171px; /* Ajustado a la medida proporcionada */
+    height: 55px; /* Ajustado a la medida proporcionada */
+    background-color: #Ade8f4;
+    color: #000000;
+    padding: 10px;
+    border: none;
+    border-radius: 200px; /* Corner radius de 200 */
+    font-size: 16px;
+    font-weight: 600; /* Aplica la negrita con el peso 600 */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+}
+
+.btn-primario:hover {
+    background-color: #00b4d8;
+}
+
+/* Enlace de registro */
+.registro p {
+    margin-top: 15px;
+    color: #ffffff;
+}
+
+.registro a {
+    color: #00b4d8;
+    text-decoration: none;
+    font-weight: bold;
+}
